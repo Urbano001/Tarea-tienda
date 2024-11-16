@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Don Pedro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <h2 class="product-title">Anis Cartujo</h2>
+                <p class="product-price">$5</p>
+                <p class="stock">Stock disponible: <span id="stock1">3</span></p>
+                <div class="quantity-control">
+                    <input type="number" id="quantity1" class="quantity-input" value="0" min="0" max="3">
+                    <button onclick="addToCart(1)">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="product-title">Ron Santa Teresa</h2>
+                <p class="product-price">$12</p>
+                <p class="stock">Stock disponible: <span id="stock2">3</span></p>
+                <div class="quantity-control">
+                    <input type="number" id="quantity2" class="quantity-input" value="0" min="0" max="3">
+                    <button onclick="addToCart(2)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="invoice" class="invoice" style="display: none;">
+            <h2>Factura</h2>
+            <div id="invoice-content"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+</body>
+</html>
